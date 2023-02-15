@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+padding: 2rem;
+background-color: #BCE2E8;
+i{
+    font-size: 2.8rem;
+} 
+
+&__menu{
+    &-button, &-user{
+        cursor: pointer;
+    }
+}
+
+
+}
+
+@include responsive(md) {
+  .navbar {
+  
+  }
+}
+
+@include responsive(lg) {
+  .navbar {
+  
+  }
+}

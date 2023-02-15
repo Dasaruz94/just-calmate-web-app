@@ -1,0 +1,13 @@
+@include responsive(md) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    color: #1f1f1f;
+    background-color: #B7E4C7;
+  }
+}
+
+.blur {
+  filter: blur(8px) !important;
+}
