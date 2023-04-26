@@ -1,0 +1,63 @@
+.started__task__progress{
+  &__circle{
+
+    &-icon{
+      color: white;
+      position: absolute;
+      font-size: 7rem;
+      left: 3.8%;
+      top: 13%;
+    }
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  &-text {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  &-link {
+    background-color: white;
+    border-radius: 20px;
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #333;
+      color: white;
+    }
+  }
+}

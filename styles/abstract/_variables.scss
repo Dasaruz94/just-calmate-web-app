@@ -1,19 +1,39 @@
 :root {
-    --rojo-principal: #aa1a19;
-    --rojo-claro: #cc1d1c;
-    --rojo-fuerte: #931615;
-    --amarillo-contraste: #f7cf28;
-  
-    --titulos-color: #6c6767;
-    --parrafos-color: #464646;
-    --texto-color: #342e2e;
-  
-    --base-gris: #958d8d;
-    --base-gris-fuerte: #5c5555;
-    --base-gris-media: #7b7373;
-    --base-gris-claro: #ddd6d6;
-    --base-cards: #f0f0f0;
-  
-    --default-font-size: 1.6rem;
-  }
-  
+  --background-dark: #a6a6a6;
+
+  --primary-1: #f2f2f2;
+  --secundary-1: #d3d3d3;
+  --tertiary-1: #000000;
+
+  --primary-2: #c9c9c9;
+  --secundary-2: #bfbfbf;
+  --tertiary-2: #000000;
+
+  --primary-3: #7fffd4;
+  --secundary-3: #00bfff;
+  --tertiary-3: #00008b;
+
+  --primary-4: #e6e6fa;
+  --secundary-4: #9370db;
+  --tertiary-4: #8b008b;
+
+  --background-light: #f2f2f2;
+
+  --primary-L1: #d3d3d3;
+  --secundary-L1: #a6a6a6;
+  --tertiary-L1: #000000;
+
+  --primary-L2: #bfbfbf;
+  --secundary-L2: #a6a6a6;
+  --tertiary-L2: #000000;
+
+  --primary-L3: #7fffd4;
+  --secundary-L3: #00bfff;
+  --tertiary-L3: #00008b;
+
+  --primary-L4: #e6e6fa;
+  --secundary-L4: #9370db;
+  --tertiary-L4: #8b008b;
+
+  --default-font-size: 1.6rem;
+}

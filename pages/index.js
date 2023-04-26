@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import StartedTasks from '../components/home/StartedTasks'
 
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
          
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
       </Head>
+
+    <StartedTasks />
     </>
   )
 }
