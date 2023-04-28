@@ -6,15 +6,15 @@ const Navbar = () => {
   return (
    <div className="navbar">
     <div className="navbar__menu-button">
-    <i class='bx bx-menu'></i>
+    <i className='bx bx-menu'></i>
     </div>
 
     <div className="navbar__menu-logo">
-    <i class='bx bx-pulse'></i>
+    <i className='bx bx-pulse'></i>
     </div>
     
     <div className="navbar__menu-user">
-    <i class='bx bx-user'></i>
+    <i className='bx bx-user'></i>
     </div>
     
    </div>

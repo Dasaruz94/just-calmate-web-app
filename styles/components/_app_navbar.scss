@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: row;
 justify-content: space-between;
-padding: 2rem;
-background-color: #BCE2E8;
+padding: .5rem;
+background-color: var(--navbar-dark);
+position: fixed;
+width: 100%;
+height: 6vh;
+z-index: 20000;
 i{
     font-size: 2.8rem;
 } 
@@ -15,6 +19,10 @@ i{
 }
 
 
+}
+
+main{
+  padding-top: 6vh;
 }
 
 @include responsive(md) {

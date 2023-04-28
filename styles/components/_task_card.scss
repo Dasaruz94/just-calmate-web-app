@@ -1,12 +1,18 @@
-.started__task__progress{
-  &__circle{
-
-    &-icon{
-      color: white;
-      position: absolute;
-      font-size: 7rem;
-      left: 3.8%;
-      top: 13%;
+.started__tasks{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-left: 1rem;
+  &__progress{
+    &__circle{
+  
+      &-icon{
+        color: white;
+        position: relative;
+        font-size: 7rem;
+        left: 1.5rem;
+        bottom: 9rem;
+      }
     }
   }
 }
