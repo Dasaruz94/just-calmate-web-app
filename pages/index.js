@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import StartedTasks from '../components/home/StartedTasks'
-import RightNow from '../components/home/RightNow'
-
+import Head from "next/head";
+import Image from "next/image";
+import StartedTasks from "../components/home/StartedTasks";
+import RightNow from "../components/home/RightNow";
+import MyDay from "../components/home/MyDay";
 
 export default function Home() {
   return (
     <>
-     <Head>
+      <Head>
         <meta charSet="utf-8" />
         <title>Calma-todo's</title>
         <meta
@@ -15,13 +15,17 @@ export default function Home() {
           content="Administrador de tareas enfocado en calmar la ansiedad por sobre carga"
         />
         <link rel="icon" href="/favicon.ico" />
-         
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
       </Head>
 
       <RightNow />
-
-    <StartedTasks />
+      <MyDay />
+      {/* 
+      <StartedTasks /> */}
     </>
-  )
+  );
 }
