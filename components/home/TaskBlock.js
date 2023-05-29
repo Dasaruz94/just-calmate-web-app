@@ -4,7 +4,7 @@ import CircleProgress from "./StartedTask/CircleProgress";
 
 ////QUIERO CREAR AQUI UN CARRUSEL EN UN FUTURO PARA TODAS LAS TAREAS INICIADAS. MÁX 3 POR AHORA
 
-const StartedTasks = ({ taskInfo }) => {
+const TaskBlock = ({ taskInfo }) => {
   return (
     <>
       <div className="started__tasks">
@@ -28,4 +28,4 @@ const StartedTasks = ({ taskInfo }) => {
   );
 };
 
-export default StartedTasks;
+export default TaskBlock;

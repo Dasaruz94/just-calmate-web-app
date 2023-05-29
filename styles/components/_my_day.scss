@@ -11,6 +11,16 @@
   /* overflow-y: scroll; */
   display: flex;
   flex-direction: column;
+  z-index: 100;
+}
+
+.centerTarget {
+  font-size: 2rem;
+  position: relative;
+  left: 92%;
+  bottom: 3rem;
+  opacity: 0.6;
+  z-index: 10000;
 }
 
 .hourBlock {
@@ -23,11 +33,12 @@
   .minuteLine {
     position: absolute;
     left: 50%;
-    width: 90%;
+    width: 98%;
     height: 2px;
     background-color: #d3d3d3;
     transform: translateX(-50%);
     box-shadow: 0px 0px 10px #d3d3d3;
+    z-index: 10000;
   }
 }
 
@@ -36,4 +47,5 @@
   position: absolute;
   top: 5px;
   left: 5px;
+  z-index: 10000;
 }
