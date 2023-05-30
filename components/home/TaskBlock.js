@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 ////QUIERO CREAR AQUI UN CARRUSEL EN UN FUTURO PARA TODAS LAS TAREAS INICIADAS. MÁX 3 POR AHORA
 
 const TaskBlock = ({ taskBlocks, containerInfo }) => {
-  console.warn("containerInfo: ", containerInfo);
-  /*  const [container, setContainer] = useState(); */
-  console.warn("taskBlocks: ", taskBlocks);
+  /*   console.warn("containerInfo: ", containerInfo);
+    const [container, setContainer] = useState(); 
+  console.warn("taskBlocks: ", taskBlocks); */
   useEffect(() => {
     // Obtenemos la info del contenedor
     const container = document.querySelector(".container");
@@ -92,7 +92,7 @@ const getTaskBlockPosition = (startDate) => {
 
   topPosition = topPosition + (startMinutes * 100) / 60;
 
-  console.warn("prueba blockPosition minutes on pixels: ", topPosition);
+  /*   console.warn("prueba blockPosition minutes on pixels: ", topPosition); */
 
   return topPosition + "px";
 
