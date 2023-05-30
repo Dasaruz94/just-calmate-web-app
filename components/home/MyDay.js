@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import TaskBlock from "./TaskBlock";
 
 const MyDay = () => {
   const [minuteLineSet, setMinuteLineSet] = useState(false);
@@ -10,21 +11,21 @@ const MyDay = () => {
     {
       name: "Profesional",
       color: "blue",
-      start_date: "2023-05-20 09:00",
-      end_date: "2023-05-20 12:55",
+      start_date: "2023-05-20 08:00",
+      end_date: "2023-05-20 10:30",
     },
-    /* {
+    {
       name: "Personal",
       color: "green",
-      start_date: "2023-06-01 10:15",
-      end_date: "2023-06-01 14:30",
+      start_date: "2023-06-01 10:45",
+      end_date: "2023-06-01 12:20",
     },
     {
       name: "Personal",
       color: "aquamarine",
       start_date: "2023-05-15 14:30",
       end_date: "2023-05-15 17:45",
-    }, */
+    },
   ];
 
   useEffect(() => {
@@ -72,18 +73,7 @@ const MyDay = () => {
             </div>
           ))}
 
-          {tasks.map((taskBlock) => (
-            <div
-              className="taskBlock"
-              style={{
-                backgroundColor: taskBlock.color,
-                top: getTaskBlockPosition(taskBlock.start_date),
-                height: getTaskBlockSize(taskBlock),
-              }}
-            >
-              <p>{taskBlock.name}</p>
-            </div>
-          ))}
+          <TaskBlock taskBlocks={tasks} containerInfo={containerRef} />
         </div>
       </motion.div>
       <i
@@ -122,41 +112,6 @@ const getHourPosition = () => {
     top: scrollTop + 127,
     behavior: "smooth",
   });
-};
-
-/// Posicion de task block
-
-const getTaskBlockSize = (taskBlock) => {
-  let fechaInicio = new Date(taskBlock.start_date);
-  let fechaFin = new Date(taskBlock.end_date);
-
-  // Calcula la diferencia en milisegundos entre las dos fechas
-  let diferenciaEnMilisegundos = fechaFin - fechaInicio;
-
-  // Calcula la diferencia en minutos
-  let diferenciaEnMinutos = diferenciaEnMilisegundos / (1000 * 60);
-
-  // Calcula la diferencia en píxeles
-  let diferenciaEnPixeles = (diferenciaEnMinutos / 60) * 100;
-
-  return diferenciaEnPixeles;
-};
-
-const getTaskBlockPosition = (startDate) => {
-  let startHour = new Date(startDate).getHours();
-
-  console.warn("prueba blockPosition startHour: ", startHour);
-
-  // Calculamos la altura a la que mandamos el bloque de tareas
-  /* const container = document.querySelector(".container");
-  let hourBlock = document.querySelector(
-    `.hourBlock:nth-child(${startHour + 1})`
-  );
-
-
-  let scrollTop = hourBlock.offsetTop - container.offsetTop;
-
-  return scrollTop + 127; */
 };
 
 const getCurrentMinutes = () => {
