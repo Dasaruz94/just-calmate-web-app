@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+/* import { motion } from "framer-motion"; */
 import CircleProgress from "./StartedTask/CircleProgress";
 
 ////QUIERO CREAR AQUI UN CARRUSEL EN UN FUTURO PARA TODAS LAS TAREAS INICIADAS. MÁX 3 POR AHORA

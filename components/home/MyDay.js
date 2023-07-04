@@ -33,7 +33,7 @@ const MyDay = () => {
 
     let currentHour = new Date().getHours();
     // Calculamos la altura a la que debemos hacer scroll para que el bloque de la hora actual quede en la parte superior del contenedor
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".day__container");
     let hourBlock = document.querySelector(
       `.hourBlock:nth-child(${currentHour + 1})`
     );
@@ -60,7 +60,7 @@ const MyDay = () => {
   return (
     <>
       <motion.div
-        className="container"
+        className="day__container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -100,7 +100,7 @@ const formatHour = (hour) => {
 const getHourPosition = () => {
   let currentHour = new Date().getHours();
   // Calculamos la altura a la que debemos hacer scroll para que el bloque de la hora actual quede en la parte superior del contenedor
-  const container = document.querySelector(".container");
+  const container = document.querySelector(".day__container");
   let hourBlock = document.querySelector(
     `.hourBlock:nth-child(${currentHour + 1})`
   );

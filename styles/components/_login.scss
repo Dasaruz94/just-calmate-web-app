@@ -1,0 +1,24 @@
+.login {
+  hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+    background-image: linear-gradient(
+      to right,
+      white 0.5px,
+      black 0.5px,
+      black calc(100% - 0.5px),
+      white calc(100% - 0.5px)
+    );
+  }
+
+  &__socialIcons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
